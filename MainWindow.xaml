@@ -1,0 +1,30 @@
+﻿<Window x:Class="CalcThread.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalcThread"
+        mc:Ignorable="d"
+        Title="MainWindow" MinHeight="312" MinWidth="418" Height="312" Width="418" WindowStyle="ToolWindow">
+    <Grid>
+        <Grid Margin="10,10,132,60">
+            <Button Name="button_1" Margin="10,66,158,132" Content="1" Click="button_1_Click"/>
+            <Button Name="button_3" Margin="10,99,158,99" Content="3" Click="button_3_Click"/>
+            <Button Name="button_5" Margin="10,132,158,66" Content="5" Click="button_5_Click"/>
+            <Button Name="button_2" Margin="123,66,45,132" Content="2" Click="button_2_Click"/>
+            <Button Name="button_4" Margin="123,99,45,99" Content="4" Click="button_4_Click"/>
+            <Button Name="button_6" Margin="123,132,45,66" Content="6" Click="button_6_Click"/>
+            <Button Name="button_7" Margin="10,165,158,33" Content="7" Click="button_7_Click"/>
+            <Button Name="button_ymnoz" Margin="236,99,5,99" Content="*" Click="button_ymnoz_Click"/>
+            <Button Name="button_minus" Margin="236,132,5,66" Content="-" Click="button_minus_Click"/>
+            <Button Name="button_razdel" Margin="236,165,5,33" Content="/" Click="button_razdel_Click"/>
+            <Button Name="button_plus" Margin="236,66,0,132" Content="+" HorizontalAlignment="Left" Width="35" Click="button_plus_Click"/>
+            <TextBox Name="tb_sumal" HorizontalAlignment="Left" Margin="10,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="221" Height="28" IsEnabled="False" TextChanged="tb_sumal_TextChanged"/>
+            <Button Name="button_8" Margin="123,165,45,33" Content="8" Click="button_8_Click"/>
+            <Button Name="button_9" Margin="10,198,158,0" Content="9" Click="button_9_Click"/>
+            <Button x:Name="button_0" Margin="123,198,45,0" Content="0"/>
+            <Button x:Name="button_delete" Margin="236,198,5,0" Content="Del" Click="button_delete_Click_1"/>
+            <Button x:Name="button_sumal" Margin="236,33,5,165" Content="=" Click="button_sumal_Click"/>
+        </Grid>
+    </Grid>
+</Window>
