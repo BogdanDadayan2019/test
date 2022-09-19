@@ -11,158 +11,159 @@ namespace CalcThread
     public partial class MainWindow : Window
     {
 
-        int sum = 0;
+        int sumOfNumbers = 0;
 
         StringBuilder stringBilder = new StringBuilder();
 
-        int first;
-        int second;
+        int firstNumber;
+        int secondNumber;
 
         public MainWindow()
         {
             InitializeComponent();
 
-            //button_sumal.IsEnabled = false; 
+            
         }
 
-        //    public void CheckSecondChislo()
+        // ~~~~~~~~~~~~~~~Number Buttons~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+        private void ButtonOneNumber_Click(object sender, RoutedEventArgs e)
+        {
+            stringBilder.Append(ButtonOneNumber.Content);
+            TextBlockNumberMain.Text = stringBilder.ToString();
+        }
+
+        private void ButtonTwoNumber_Click(object sender, RoutedEventArgs e)
+        {
+            stringBilder.Append(ButtonTwoNumber.Content);
+            TextBlockNumberMain.Text = stringBilder.ToString();
+        }
+
+        private void ButtonThreeNumber_Click(object sender, RoutedEventArgs e)
+        {
+            stringBilder.Append(ButtonThreeNumber.Content);
+            TextBlockNumberMain.Text = stringBilder.ToString();
+        }
+
+        private void ButtonFourNumber_Click(object sender, RoutedEventArgs e)
+        {
+            stringBilder.Append(ButtonFourNumber.Content);
+            TextBlockNumberMain.Text = stringBilder.ToString();
+        }
+
+        private void ButtonFiveNumber_Click(object sender, RoutedEventArgs e)
+        {
+            stringBilder.Append(ButtonFiveNumber.Content);
+            TextBlockNumberMain.Text = stringBilder.ToString();
+        }
+
+        private void ButtonSixNumber_Click(object sender, RoutedEventArgs e)
+        {
+            stringBilder.Append(ButtonSixNumber.Content);
+            TextBlockNumberMain.Text = stringBilder.ToString();
+        }
+
+        private void ButtonSevenNumber_Click(object sender, RoutedEventArgs e)
+        {
+            stringBilder.Append(ButtonSevenNumber.Content);
+            TextBlockNumberMain.Text = stringBilder.ToString();
+        }
+
+        private void ButtonEightNumber_Click(object sender, RoutedEventArgs e)
+        {
+            stringBilder.Append(ButtonEightNumber.Content);
+            TextBlockNumberMain.Text = stringBilder.ToString();
+        }
+
+        private void ButtonNineNumber_Click(object sender, RoutedEventArgs e)
+        {
+            stringBilder.Append(ButtonNineNumber.Content);
+            TextBlockNumberMain.Text = stringBilder.ToString();
+        }
+
+        private void ButtonZeroNumber_Click(object sender, RoutedEventArgs e)
+        {
+            stringBilder.Append(ButtonZeroNumber.Content);
+            TextBlockNumberMain.Text = stringBilder.ToString();
+        }
+
+        private void ButtonDelete_Click(object sender, RoutedEventArgs e)
+        {
+            firstNumber = 0;
+            secondNumber = 0;
+
+
+            stringBilder.Clear();
+            TextBlockNumberMain.Text = "";
+            TextBlockNumberSecond.Text = "";
+
+        }
+
+        private void ButtonPlus_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (TextBlockNumberMain.Text == "")
+            {
+                firstNumber = 0;
+            }
+            else
+            {
+                firstNumber = Int32.Parse(TextBlockNumberMain.Text);
+              
+            }
+
+            sumOfNumbers = 0;
+            stringBilder.Clear();
+            TextBlockNumberMain.Text = "0";
+
+        }
+
+        private void ButtonEquals_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (TextBlockNumberMain.Text == "")
+            {
+                secondNumber = 0;
+            }
+            else
+            {
+                secondNumber = Int32.Parse(TextBlockNumberMain.Text);
+            }
+
+            sumOfNumbers = secondNumber + firstNumber;
+            TextBlockNumberMain.Text = sumOfNumbers.ToString();
+
+            stringBilder.Clear();
+
+            sumOfNumbers = 0;
+            firstNumber = 0;
+            secondNumber = 0;
+        }
+
+
+        //private void button_sumal_Click(object sender, RoutedEventArgs e)
+        //{
+        //    if (tb_sumal.Text == "")
         //    {
-        //        if (second <= 0)
-        //        {
-        //            button_sumal.IsEnabled = false;
-        //        }
-        //        else
-        //        {
-        //            button_sumal.IsEnabled = true;
-        //        }
-        //    }
-
-        //    private void button_plus_Click(object sender, RoutedEventArgs e)
-
-        //    {
-        //        if(tb_sumal.Text == "")
-        //        {
-        //            first = 0;
-        //        }
-        //        else
-        //        {
-        //            first = Int32.Parse(tb_sumal.Text);
-        //        }
-        //        sum = 0;
-        //        stringBilder.Clear();
-        //        tb_sumal.Text = "0";
-        //        //button_sumal.IsEnabled = true;
-        //        //button_plus.IsEnabled = false;
-        //    }
-
-        //    private void button_delete_Click(object sender, RoutedEventArgs e)
-        //    {
-        //        tb_sumal.Text = "0";
-
-        //        stringBilder.Clear();
-        //        sum = 0;
-        //        first = 0;
         //        second = 0;
         //    }
-
-        //    private void button_sumal_Click(object sender, RoutedEventArgs e)
+        //    else
         //    {
-        //        if(tb_sumal.Text == "")
-        //        {
-        //            second = 0;
-        //        }
-        //        else
-        //        {
-        //            second = Int32.Parse(tb_sumal.Text);
-        //        }
-
-        //        sum = first + second;
-        //        tb_sumal.Text = sum.ToString();
-
-        //        //button_plus.IsEnabled = true;
-        //        //button_sumal.IsEnabled = false;
-
-        //        stringBilder.Clear();
-        //        sum = 0;
-        //        first = 0;
-        //        second = 0;
+        //        second = Int32.Parse(tb_sumal.Text);
         //    }
 
-        //    private void button_1_Click(object sender, RoutedEventArgs e)
-        //    {
-        //        tb_sumal.Text = stringBilder.Append("1").ToString();
-        //    }
-        //    private void button_2_Click(object sender, RoutedEventArgs e)
-        //    {
-        //        tb_sumal.Text = stringBilder.Append("2").ToString();
-        //    }
-        //    private void button_3_Click(object sender, RoutedEventArgs e)
-        //    {
-        //        tb_sumal.Text = stringBilder.Append("3").ToString();
-        //    }
+        //    sum = first + second;
+        //    tb_sumal.Text = sum.ToString();
 
-        //    private void button_4_Click(object sender, RoutedEventArgs e)
-        //    {
-        //        tb_sumal.Text = stringBilder.Append("4").ToString();
-        //    }
+        //    //button_plus.IsEnabled = true;
+        //    //button_sumal.IsEnabled = false;
 
-        //    private void button_5_Click(object sender, RoutedEventArgs e)
-        //    {
-        //        tb_sumal.Text = stringBilder.Append("5").ToString();
-        //    }
-
-        //    private void button_6_Click(object sender, RoutedEventArgs e)
-        //    {
-        //        tb_sumal.Text = stringBilder.Append("6").ToString();
-        //    }
-
-        //    private void button_7_Click(object sender, RoutedEventArgs e)
-        //    {
-        //        tb_sumal.Text = stringBilder.Append("7").ToString();
-        //    }
-
-        //    private void button_8_Click(object sender, RoutedEventArgs e)
-        //    {
-        //        tb_sumal.Text = stringBilder.Append("8").ToString();
-        //    }
-
-        //    private void button_9_Click(object sender, RoutedEventArgs e)
-        //    {
-        //        tb_sumal.Text = stringBilder.Append("9").ToString();
-        //    }
-
-        //    private void button_0_Click(object sender, RoutedEventArgs e)
-        //    {
-        //        tb_sumal.Text = stringBilder.Append("0").ToString();
-        //    }
-
-        //    private void button_delete_Click_1(object sender, RoutedEventArgs e)
-        //    {
-        //        tb_sumal.Text = "";
-        //        sum = 0;
-        //        first = 0;
-        //        second = 0;
-        //    }
-
-        //    private void button_ymnoz_Click(object sender, RoutedEventArgs e)
-        //    {
-
-        //    }
-
-        //    private void button_minus_Click(object sender, RoutedEventArgs e)
-        //    {
-
-        //    }
-
-        //    private void button_razdel_Click(object sender, RoutedEventArgs e)
-        //    {
-
-        //    }
-
-        //    private void tb_sumal_TextChanged(object sender, TextChangedEventArgs e)
-        //    {
-
-        //    }
+        //    stringBilder.Clear();
+        //    sum = 0;
+        //    first = 0;
+        //    second = 0;
         //}
+  //    }
+
     }
 }

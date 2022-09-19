@@ -70,48 +70,48 @@
         <Button Grid.Column="2" Grid.Row="3" Content="2(sqrtX)"></Button>
 
 
-        <Button Grid.Column="0" Grid.Row="4" Content="1"></Button>
+        <Button x:Name="ButtonOneNumber" Grid.Column="0" Grid.Row="4" Content="1" Click="ButtonOneNumber_Click"></Button>
 
-        <Button Grid.Column="0" Grid.Row="5" Content="4"></Button>
+        <Button x:Name="ButtonFourNumber" Grid.Column="0" Grid.Row="5" Content="4" Click="ButtonFourNumber_Click"></Button>
 
-        <Button Grid.Column="0" Grid.Row="6" Content="7"></Button>
+        <Button x:Name="ButtonSevenNumber" Grid.Column="0" Grid.Row="6" Content="7" Click="ButtonSevenNumber_Click"></Button>
 
         <Button Grid.Column="0" Grid.Row="7" Content="+/-"></Button>
 
 
-        <Button Grid.Column="1" Grid.Row="4" Content="2"></Button>
+        <Button x:Name="ButtonTwoNumber" Grid.Column="1" Grid.Row="4" Content="2" Click="ButtonTwoNumber_Click"></Button>
 
-        <Button Grid.Column="1" Grid.Row="5" Content="5"></Button>
+        <Button x:Name="ButtonFiveNumber" Grid.Column="1" Grid.Row="5" Content="5" Click="ButtonFiveNumber_Click"></Button>
 
-        <Button Grid.Column="1" Grid.Row="6" Content="8"></Button>
+        <Button x:Name="ButtonEightNumber" Grid.Column="1" Grid.Row="6" Content="8" Click="ButtonEightNumber_Click"></Button>
 
-        <Button Grid.Column="1" Grid.Row="7" Content="0"></Button>
-        
+        <Button x:Name="ButtonZeroNumber" Grid.Column="1" Grid.Row="7" Content="0" Click="ButtonZeroNumber_Click"></Button>
 
-        <Button Grid.Column="2" Grid.Row="4" Content="3"></Button>
 
-        <Button Grid.Column="2" Grid.Row="5" Content="6"></Button>
+        <Button x:Name="ButtonThreeNumber" Grid.Column="2" Grid.Row="4" Content="3" Click="ButtonThreeNumber_Click"></Button>
 
-        <Button Grid.Column="2" Grid.Row="6" Content="9"></Button>
+        <Button x:Name="ButtonSixNumber" Grid.Column="2" Grid.Row="5" Content="6" Click="ButtonSixNumber_Click"></Button>
+
+        <Button x:Name="ButtonNineNumber" Grid.Column="2" Grid.Row="6" Content="9" Click="ButtonNineNumber_Click"></Button>
 
         <Button Grid.Column="2" Grid.Row="7" Content=","></Button>
 
 
-        <Button Grid.Column="3" Grid.Row="2" Content="Delete"></Button>
+        <Button x:Name="ButtonDelete" Grid.Column="3" Grid.Row="2" Content="Delete" Click="ButtonDelete_Click"></Button>
 
-        <Button Grid.Column="3" Grid.Row="3" Content="+"></Button>
+        <Button x:Name="ButtonPlus" Grid.Column="3" Grid.Row="3" Content="+" Click="ButtonPlus_Click"></Button>
 
-        <Button Grid.Column="3" Grid.Row="4" Content="-"></Button>
+        <Button x:Name="ButtonMinus" Grid.Column="3" Grid.Row="4" Content="-"></Button>
 
-        <Button Grid.Column="3" Grid.Row="5" Content="*"></Button>
+        <Button x:Name="ButtonMultiply" Grid.Column="3" Grid.Row="5" Content="*"></Button>
 
-        <Button Grid.Column="3" Grid.Row="6" Content="/"></Button>
+        <Button x:Name="ButtonDivide" Grid.Column="3" Grid.Row="6" Content="/"></Button>
 
-        <Button Grid.Column="3" Grid.Row="7" Content="="></Button>
+        <Button x:Name="ButtonEquals" Grid.Column="3" Grid.Row="7" Content="=" Click="ButtonEquals_Click"></Button>
 
-        <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"></TextBlock>
+        <TextBlock x:Name="TextBlockNumberMain" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"></TextBlock>
 
-        <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"></TextBlock>
+        <TextBlock x:Name="TextBlockNumberSecond" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"></TextBlock>
 
         <Label Grid.Row="0" Grid.Column="4" Content="Журнал" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
         
