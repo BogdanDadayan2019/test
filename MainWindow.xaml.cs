@@ -21,6 +21,7 @@ namespace CalcThread
         public MainWindow()
         {
             InitializeComponent();
+            
             //button_sumal.IsEnabled = false; 
         }
 
@@ -39,7 +40,14 @@ namespace CalcThread
         private void button_plus_Click(object sender, RoutedEventArgs e)
 
         {
-            first = Int32.Parse(tb_sumal.Text);
+            if(tb_sumal.Text == "")
+            {
+                first = 0;
+            }
+            else
+            {
+                first = Int32.Parse(tb_sumal.Text);
+            }
             sum = 0;
             stringBilder.Clear();
             tb_sumal.Text = "0";
@@ -59,7 +67,15 @@ namespace CalcThread
 
         private void button_sumal_Click(object sender, RoutedEventArgs e)
         {
-            second = Int32.Parse(tb_sumal.Text);
+            if(tb_sumal.Text == "")
+            {
+                second = 0;
+            }
+            else
+            {
+                second = Int32.Parse(tb_sumal.Text);
+            }
+            
             sum = first + second;
             tb_sumal.Text = sum.ToString();
 
