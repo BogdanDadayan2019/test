@@ -7,24 +7,121 @@
         mc:Ignorable="d"
         Title="MainWindow" MinHeight="312" MinWidth="418" Height="312" Width="418" WindowStyle="ToolWindow">
     <Grid>
-        <Grid Margin="10,10,132,60">
-            <Button Name="button_1" Margin="10,66,158,132" Content="1" Click="button_1_Click"/>
-            <Button Name="button_3" Margin="10,99,158,99" Content="3" Click="button_3_Click"/>
-            <Button Name="button_5" Margin="10,132,158,66" Content="5" Click="button_5_Click"/>
-            <Button Name="button_2" Margin="123,66,45,132" Content="2" Click="button_2_Click"/>
-            <Button Name="button_4" Margin="123,99,45,99" Content="4" Click="button_4_Click"/>
-            <Button Name="button_6" Margin="123,132,45,66" Content="6" Click="button_6_Click"/>
-            <Button Name="button_7" Margin="10,165,158,33" Content="7" Click="button_7_Click"/>
-            <Button Name="button_ymnoz" Margin="236,99,5,99" Content="*" Click="button_ymnoz_Click"/>
-            <Button Name="button_minus" Margin="236,132,5,66" Content="-" Click="button_minus_Click"/>
-            <Button Name="button_razdel" Margin="236,165,5,33" Content="/" Click="button_razdel_Click"/>
-            <Button Name="button_plus" Margin="236,66,0,132" Content="+" HorizontalAlignment="Left" Width="35" Click="button_plus_Click"/>
-            <TextBox Name="tb_sumal" HorizontalAlignment="Left" Margin="10,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="221" Height="28" IsEnabled="False" TextChanged="tb_sumal_TextChanged"/>
-            <Button Name="button_8" Margin="123,165,45,33" Content="8" Click="button_8_Click"/>
-            <Button Name="button_9" Margin="10,198,158,0" Content="9" Click="button_9_Click"/>
-            <Button x:Name="button_0" Margin="123,198,45,0" Content="0"/>
-            <Button x:Name="button_delete" Margin="236,198,5,0" Content="Del" Click="button_delete_Click_1"/>
-            <Button x:Name="button_sumal" Margin="236,33,5,165" Content="=" Click="button_sumal_Click"/>
-        </Grid>
+        
+       
+        
+        <Grid.RowDefinitions>
+            
+            
+            
+            <RowDefinition Height="*"/>
+
+            <RowDefinition Height="*"/>
+
+            <RowDefinition Height="*"/>
+            
+             <RowDefinition Height="*"/>
+
+            <RowDefinition Height="*"/>
+            
+            <RowDefinition Height="*"/>
+
+            <RowDefinition Height="*"/>
+
+            <RowDefinition Height="*"/>
+
+
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*">
+            </ColumnDefinition>
+
+            <ColumnDefinition Width="*">
+            </ColumnDefinition>
+
+            <ColumnDefinition Width="*">
+            </ColumnDefinition>
+
+            <ColumnDefinition Width="*">
+            </ColumnDefinition>
+
+            <ColumnDefinition Width="*">
+            </ColumnDefinition>
+            
+            <ColumnDefinition Width="*">
+            </ColumnDefinition>
+            
+
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="0" Grid.Row="2" Content="%"></Button>
+
+        <Button Grid.Column="1" Grid.Row="2" Content="CE"></Button>
+
+        <Button Grid.Column="2" Grid.Row="2" Content="C"></Button>
+
+        <Button Grid.Column="0" Grid.Row="3" Content="1/x"></Button>
+
+        <Button Grid.Column="1" Grid.Row="3" Content="x*2"></Button>
+
+        <Button Grid.Column="2" Grid.Row="3" Content="2(sqrtX)"></Button>
+
+
+        <Button Grid.Column="0" Grid.Row="4" Content="1"></Button>
+
+        <Button Grid.Column="0" Grid.Row="5" Content="4"></Button>
+
+        <Button Grid.Column="0" Grid.Row="6" Content="7"></Button>
+
+        <Button Grid.Column="0" Grid.Row="7" Content="+/-"></Button>
+
+
+        <Button Grid.Column="1" Grid.Row="4" Content="2"></Button>
+
+        <Button Grid.Column="1" Grid.Row="5" Content="5"></Button>
+
+        <Button Grid.Column="1" Grid.Row="6" Content="8"></Button>
+
+        <Button Grid.Column="1" Grid.Row="7" Content="0"></Button>
+        
+
+        <Button Grid.Column="2" Grid.Row="4" Content="3"></Button>
+
+        <Button Grid.Column="2" Grid.Row="5" Content="6"></Button>
+
+        <Button Grid.Column="2" Grid.Row="6" Content="9"></Button>
+
+        <Button Grid.Column="2" Grid.Row="7" Content=","></Button>
+
+
+        <Button Grid.Column="3" Grid.Row="2" Content="Delete"></Button>
+
+        <Button Grid.Column="3" Grid.Row="3" Content="+"></Button>
+
+        <Button Grid.Column="3" Grid.Row="4" Content="-"></Button>
+
+        <Button Grid.Column="3" Grid.Row="5" Content="*"></Button>
+
+        <Button Grid.Column="3" Grid.Row="6" Content="/"></Button>
+
+        <Button Grid.Column="3" Grid.Row="7" Content="="></Button>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"></TextBlock>
+
+        <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"></TextBlock>
+
+        <Label Grid.Row="0" Grid.Column="4" Content="Журнал" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        
+        <Label Grid.Row="0" Grid.Column="5" Content="Память" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+
+        <Label Grid.Row="7" Grid.Column="5" Content="Очистить" VerticalAlignment="Bottom" HorizontalAlignment="Right"></Label>
+
+        <ListBox Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="5"></ListBox>
+        
+        
+
     </Grid>
 </Window>
